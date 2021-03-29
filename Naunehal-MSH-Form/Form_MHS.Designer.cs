@@ -1,6 +1,6 @@
 ﻿namespace Naunehal_MSH_Form
 {
-    partial class Form1
+    partial class Form_MHS
     {
         /// <summary>
         /// Required designer variable.
