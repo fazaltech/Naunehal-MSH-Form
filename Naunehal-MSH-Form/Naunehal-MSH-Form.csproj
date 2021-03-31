@@ -58,6 +58,10 @@
     <Compile Include="Form_MHS.Designer.cs">
       <DependentUpon>Form_MHS.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\DataVariables.cs" />
+    <Compile Include="Models\forms_data.cs" />
+    <Compile Include="Models\users.cs" />
+    <Compile Include="Models\villages.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form_Login.resx">

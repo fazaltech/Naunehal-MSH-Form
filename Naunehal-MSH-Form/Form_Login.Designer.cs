@@ -33,9 +33,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button_Login = new System.Windows.Forms.Button();
+            this.textbox_username = new System.Windows.Forms.TextBox();
+            this.textbox_password = new System.Windows.Forms.TextBox();
+            this.button_login = new System.Windows.Forms.Button();
             this.button_download = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -54,9 +54,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button_Login);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.button_login);
+            this.groupBox1.Controls.Add(this.textbox_password);
+            this.groupBox1.Controls.Add(this.textbox_username);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(24, 231);
@@ -93,29 +93,30 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Password";
             // 
-            // textBox1
+            // textbox_username
             // 
-            this.textBox1.Location = new System.Drawing.Point(100, 43);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 20);
-            this.textBox1.TabIndex = 1;
+            this.textbox_username.Location = new System.Drawing.Point(100, 43);
+            this.textbox_username.Name = "textbox_username";
+            this.textbox_username.Size = new System.Drawing.Size(132, 20);
+            this.textbox_username.TabIndex = 0;
             // 
-            // textBox2
+            // textbox_password
             // 
-            this.textBox2.Location = new System.Drawing.Point(100, 76);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(132, 20);
-            this.textBox2.TabIndex = 1;
+            this.textbox_password.Location = new System.Drawing.Point(100, 76);
+            this.textbox_password.Name = "textbox_password";
+            this.textbox_password.Size = new System.Drawing.Size(132, 20);
+            this.textbox_password.TabIndex = 1;
             // 
-            // button_Login
+            // button_login
             // 
-            this.button_Login.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button_Login.Location = new System.Drawing.Point(65, 112);
-            this.button_Login.Name = "button_Login";
-            this.button_Login.Size = new System.Drawing.Size(130, 34);
-            this.button_Login.TabIndex = 2;
-            this.button_Login.Text = "Login";
-            this.button_Login.UseVisualStyleBackColor = false;
+            this.button_login.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button_login.Location = new System.Drawing.Point(65, 112);
+            this.button_login.Name = "button_login";
+            this.button_login.Size = new System.Drawing.Size(130, 34);
+            this.button_login.TabIndex = 2;
+            this.button_login.Text = "Login";
+            this.button_login.UseVisualStyleBackColor = false;
+            this.button_login.Click += new System.EventHandler(this.button_login_Click);
             // 
             // button_download
             // 
@@ -135,7 +136,7 @@
             this.button2.Location = new System.Drawing.Point(177, 436);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(133, 23);
-            this.button2.TabIndex = 3;
+            this.button2.TabIndex = 4;
             this.button2.Text = "Upload";
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -164,12 +165,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textbox_password;
+        private System.Windows.Forms.TextBox textbox_username;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button_Login;
+        private System.Windows.Forms.Button button_login;
         private System.Windows.Forms.Button button_download;
         private System.Windows.Forms.Button button2;
     }

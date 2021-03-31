@@ -115,6 +115,11 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.radiobtn_lt_opv02 = new System.Windows.Forms.RadioButton();
+            this.radiobtn_lt_opv01 = new System.Windows.Forms.RadioButton();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.radiobtn_rou_immu02 = new System.Windows.Forms.RadioButton();
+            this.radiobtn_rou_immu01 = new System.Windows.Forms.RadioButton();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.radiobtn_vacc_card02 = new System.Windows.Forms.RadioButton();
             this.radiobtn_vacc_card01 = new System.Windows.Forms.RadioButton();
@@ -150,11 +155,11 @@
             this.checkbox_antimalarial = new System.Windows.Forms.CheckBox();
             this.checkbox_deworming = new System.Windows.Forms.CheckBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.radio_other_preg = new System.Windows.Forms.RadioButton();
-            this.radio_susp_anemia = new System.Windows.Forms.RadioButton();
-            this.radio_preg_ind_hyp = new System.Windows.Forms.RadioButton();
-            this.radio_antenatal_checkup = new System.Windows.Forms.RadioButton();
+            this.checkbox_wo_other = new System.Windows.Forms.CheckBox();
+            this.checkbox_wo_susp_anemia = new System.Windows.Forms.CheckBox();
+            this.checkbox_preg_ind_hyp = new System.Windows.Forms.CheckBox();
+            this.checkbox_antenatal_checkup = new System.Windows.Forms.CheckBox();
+            this.textbox_pregother = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
             this.radio_hydration2 = new System.Windows.Forms.RadioButton();
@@ -172,11 +177,6 @@
             this.masked_height_length = new System.Windows.Forms.MaskedTextBox();
             this.masked_weight = new System.Windows.Forms.MaskedTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.radiobtn_rou_immu01 = new System.Windows.Forms.RadioButton();
-            this.radiobtn_rou_immu02 = new System.Windows.Forms.RadioButton();
-            this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.radiobtn_lt_opv01 = new System.Windows.Forms.RadioButton();
-            this.radiobtn_lt_opv02 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -187,6 +187,7 @@
             this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox17.SuspendLayout();
+            this.groupBox14.SuspendLayout();
             this.groupBox16.SuspendLayout();
             this.groupBox15.SuspendLayout();
             this.groupBox11.SuspendLayout();
@@ -198,7 +199,6 @@
             this.groupBox21.SuspendLayout();
             this.groupBox20.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.groupBox14.SuspendLayout();
             this.SuspendLayout();
             // 
             // date_form
@@ -304,7 +304,7 @@
             // radio_female
             // 
             this.radio_female.AutoSize = true;
-            this.radio_female.Location = new System.Drawing.Point(61, 18);
+            this.radio_female.Location = new System.Drawing.Point(80, 17);
             this.radio_female.Name = "radio_female";
             this.radio_female.Size = new System.Drawing.Size(59, 17);
             this.radio_female.TabIndex = 1;
@@ -319,7 +319,7 @@
             this.radio_male.Location = new System.Drawing.Point(7, 16);
             this.radio_male.Name = "radio_male";
             this.radio_male.Size = new System.Drawing.Size(48, 17);
-            this.radio_male.TabIndex = 0;
+            this.radio_male.TabIndex = 10;
             this.radio_male.TabStop = true;
             this.radio_male.Tag = "9";
             this.radio_male.Text = "Male";
@@ -455,14 +455,14 @@
             this.text_word_mouth.Location = new System.Drawing.Point(464, 53);
             this.text_word_mouth.Name = "text_word_mouth";
             this.text_word_mouth.Size = new System.Drawing.Size(100, 20);
-            this.text_word_mouth.TabIndex = 3;
+            this.text_word_mouth.TabIndex = 14;
             // 
             // text_community_mobilizer
             // 
             this.text_community_mobilizer.Location = new System.Drawing.Point(464, 17);
             this.text_community_mobilizer.Name = "text_community_mobilizer";
             this.text_community_mobilizer.Size = new System.Drawing.Size(100, 20);
-            this.text_community_mobilizer.TabIndex = 2;
+            this.text_community_mobilizer.TabIndex = 13;
             // 
             // label6
             // 
@@ -487,7 +487,7 @@
             this.text_banner.Location = new System.Drawing.Point(145, 56);
             this.text_banner.Name = "text_banner";
             this.text_banner.Size = new System.Drawing.Size(100, 20);
-            this.text_banner.TabIndex = 1;
+            this.text_banner.TabIndex = 12;
             // 
             // label5
             // 
@@ -503,7 +503,7 @@
             this.text_mosque_announcement.Location = new System.Drawing.Point(145, 20);
             this.text_mosque_announcement.Name = "text_mosque_announcement";
             this.text_mosque_announcement.Size = new System.Drawing.Size(100, 20);
-            this.text_mosque_announcement.TabIndex = 0;
+            this.text_mosque_announcement.TabIndex = 11;
             // 
             // label3
             // 
@@ -536,14 +536,14 @@
             this.text_presenting_complaints3.Location = new System.Drawing.Point(65, 88);
             this.text_presenting_complaints3.Name = "text_presenting_complaints3";
             this.text_presenting_complaints3.Size = new System.Drawing.Size(275, 20);
-            this.text_presenting_complaints3.TabIndex = 2;
+            this.text_presenting_complaints3.TabIndex = 17;
             // 
             // text_presenting_complaints2
             // 
             this.text_presenting_complaints2.Location = new System.Drawing.Point(65, 59);
             this.text_presenting_complaints2.Name = "text_presenting_complaints2";
             this.text_presenting_complaints2.Size = new System.Drawing.Size(275, 20);
-            this.text_presenting_complaints2.TabIndex = 1;
+            this.text_presenting_complaints2.TabIndex = 16;
             // 
             // label9
             // 
@@ -568,7 +568,7 @@
             this.text_presenting_complaints1.Location = new System.Drawing.Point(65, 33);
             this.text_presenting_complaints1.Name = "text_presenting_complaints1";
             this.text_presenting_complaints1.Size = new System.Drawing.Size(275, 20);
-            this.text_presenting_complaints1.TabIndex = 0;
+            this.text_presenting_complaints1.TabIndex = 15;
             // 
             // label7
             // 
@@ -938,7 +938,7 @@
             this.checkbox_suspected_malaria.Location = new System.Drawing.Point(116, 98);
             this.checkbox_suspected_malaria.Name = "checkbox_suspected_malaria";
             this.checkbox_suspected_malaria.Size = new System.Drawing.Size(114, 17);
-            this.checkbox_suspected_malaria.TabIndex = 0;
+            this.checkbox_suspected_malaria.TabIndex = 39;
             this.checkbox_suspected_malaria.Text = "Suspected Malaria";
             this.checkbox_suspected_malaria.UseVisualStyleBackColor = true;
             // 
@@ -948,7 +948,7 @@
             this.check_ear_infection.Location = new System.Drawing.Point(453, 75);
             this.check_ear_infection.Name = "check_ear_infection";
             this.check_ear_infection.Size = new System.Drawing.Size(85, 17);
-            this.check_ear_infection.TabIndex = 0;
+            this.check_ear_infection.TabIndex = 38;
             this.check_ear_infection.Text = "Ear infection";
             this.check_ear_infection.UseVisualStyleBackColor = true;
             // 
@@ -958,7 +958,7 @@
             this.checkbox_eye_infection.Location = new System.Drawing.Point(264, 75);
             this.checkbox_eye_infection.Name = "checkbox_eye_infection";
             this.checkbox_eye_infection.Size = new System.Drawing.Size(87, 17);
-            this.checkbox_eye_infection.TabIndex = 0;
+            this.checkbox_eye_infection.TabIndex = 37;
             this.checkbox_eye_infection.Text = "Eye infection";
             this.checkbox_eye_infection.UseVisualStyleBackColor = true;
             // 
@@ -968,7 +968,7 @@
             this.checkbox_skin_ailment.Location = new System.Drawing.Point(116, 75);
             this.checkbox_skin_ailment.Name = "checkbox_skin_ailment";
             this.checkbox_skin_ailment.Size = new System.Drawing.Size(83, 17);
-            this.checkbox_skin_ailment.TabIndex = 0;
+            this.checkbox_skin_ailment.TabIndex = 36;
             this.checkbox_skin_ailment.Text = "Skin ailment";
             this.checkbox_skin_ailment.UseVisualStyleBackColor = true;
             // 
@@ -978,7 +978,7 @@
             this.checkbox_worm_infestation.Location = new System.Drawing.Point(453, 56);
             this.checkbox_worm_infestation.Name = "checkbox_worm_infestation";
             this.checkbox_worm_infestation.Size = new System.Drawing.Size(105, 17);
-            this.checkbox_worm_infestation.TabIndex = 0;
+            this.checkbox_worm_infestation.TabIndex = 35;
             this.checkbox_worm_infestation.Text = "Worm infestation";
             this.checkbox_worm_infestation.UseVisualStyleBackColor = true;
             // 
@@ -988,7 +988,7 @@
             this.checkbox_asthma.Location = new System.Drawing.Point(264, 56);
             this.checkbox_asthma.Name = "checkbox_asthma";
             this.checkbox_asthma.Size = new System.Drawing.Size(61, 17);
-            this.checkbox_asthma.TabIndex = 0;
+            this.checkbox_asthma.TabIndex = 34;
             this.checkbox_asthma.Text = "Asthma";
             this.checkbox_asthma.UseVisualStyleBackColor = true;
             // 
@@ -998,7 +998,7 @@
             this.checkbox_severe_pneumonia.Location = new System.Drawing.Point(116, 56);
             this.checkbox_severe_pneumonia.Name = "checkbox_severe_pneumonia";
             this.checkbox_severe_pneumonia.Size = new System.Drawing.Size(116, 17);
-            this.checkbox_severe_pneumonia.TabIndex = 0;
+            this.checkbox_severe_pneumonia.TabIndex = 33;
             this.checkbox_severe_pneumonia.Text = "Severe Pneumonia";
             this.checkbox_severe_pneumonia.UseVisualStyleBackColor = true;
             // 
@@ -1008,7 +1008,7 @@
             this.checkbox_pneumonia.Location = new System.Drawing.Point(453, 33);
             this.checkbox_pneumonia.Name = "checkbox_pneumonia";
             this.checkbox_pneumonia.Size = new System.Drawing.Size(79, 17);
-            this.checkbox_pneumonia.TabIndex = 0;
+            this.checkbox_pneumonia.TabIndex = 32;
             this.checkbox_pneumonia.Text = "Pneumonia";
             this.checkbox_pneumonia.UseVisualStyleBackColor = true;
             // 
@@ -1018,7 +1018,7 @@
             this.checkbox_cough_cold.Location = new System.Drawing.Point(264, 33);
             this.checkbox_cough_cold.Name = "checkbox_cough_cold";
             this.checkbox_cough_cold.Size = new System.Drawing.Size(102, 17);
-            this.checkbox_cough_cold.TabIndex = 0;
+            this.checkbox_cough_cold.TabIndex = 31;
             this.checkbox_cough_cold.Text = "Cough and Cold";
             this.checkbox_cough_cold.UseVisualStyleBackColor = true;
             // 
@@ -1028,7 +1028,7 @@
             this.checkbox_acute_diarrhea.Location = new System.Drawing.Point(116, 33);
             this.checkbox_acute_diarrhea.Name = "checkbox_acute_diarrhea";
             this.checkbox_acute_diarrhea.Size = new System.Drawing.Size(97, 17);
-            this.checkbox_acute_diarrhea.TabIndex = 0;
+            this.checkbox_acute_diarrhea.TabIndex = 30;
             this.checkbox_acute_diarrhea.Text = "Acute Diarrhea";
             this.checkbox_acute_diarrhea.UseVisualStyleBackColor = true;
             // 
@@ -1096,6 +1096,60 @@
             this.groupBox17.Size = new System.Drawing.Size(200, 50);
             this.groupBox17.TabIndex = 1;
             this.groupBox17.TabStop = false;
+            // 
+            // radiobtn_lt_opv02
+            // 
+            this.radiobtn_lt_opv02.AutoSize = true;
+            this.radiobtn_lt_opv02.Location = new System.Drawing.Point(99, 20);
+            this.radiobtn_lt_opv02.Name = "radiobtn_lt_opv02";
+            this.radiobtn_lt_opv02.Size = new System.Drawing.Size(39, 17);
+            this.radiobtn_lt_opv02.TabIndex = 1;
+            this.radiobtn_lt_opv02.TabStop = true;
+            this.radiobtn_lt_opv02.Text = "No";
+            this.radiobtn_lt_opv02.UseVisualStyleBackColor = true;
+            // 
+            // radiobtn_lt_opv01
+            // 
+            this.radiobtn_lt_opv01.AutoSize = true;
+            this.radiobtn_lt_opv01.Location = new System.Drawing.Point(7, 18);
+            this.radiobtn_lt_opv01.Name = "radiobtn_lt_opv01";
+            this.radiobtn_lt_opv01.Size = new System.Drawing.Size(43, 17);
+            this.radiobtn_lt_opv01.TabIndex = 0;
+            this.radiobtn_lt_opv01.TabStop = true;
+            this.radiobtn_lt_opv01.Text = "Yes";
+            this.radiobtn_lt_opv01.UseVisualStyleBackColor = true;
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.radiobtn_rou_immu02);
+            this.groupBox14.Controls.Add(this.radiobtn_rou_immu01);
+            this.groupBox14.Location = new System.Drawing.Point(471, 32);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(200, 50);
+            this.groupBox14.TabIndex = 1;
+            this.groupBox14.TabStop = false;
+            // 
+            // radiobtn_rou_immu02
+            // 
+            this.radiobtn_rou_immu02.AutoSize = true;
+            this.radiobtn_rou_immu02.Location = new System.Drawing.Point(98, 19);
+            this.radiobtn_rou_immu02.Name = "radiobtn_rou_immu02";
+            this.radiobtn_rou_immu02.Size = new System.Drawing.Size(39, 17);
+            this.radiobtn_rou_immu02.TabIndex = 0;
+            this.radiobtn_rou_immu02.TabStop = true;
+            this.radiobtn_rou_immu02.Text = "No";
+            this.radiobtn_rou_immu02.UseVisualStyleBackColor = true;
+            // 
+            // radiobtn_rou_immu01
+            // 
+            this.radiobtn_rou_immu01.AutoSize = true;
+            this.radiobtn_rou_immu01.Location = new System.Drawing.Point(7, 19);
+            this.radiobtn_rou_immu01.Name = "radiobtn_rou_immu01";
+            this.radiobtn_rou_immu01.Size = new System.Drawing.Size(43, 17);
+            this.radiobtn_rou_immu01.TabIndex = 0;
+            this.radiobtn_rou_immu01.TabStop = true;
+            this.radiobtn_rou_immu01.Text = "Yes";
+            this.radiobtn_rou_immu01.UseVisualStyleBackColor = true;
             // 
             // groupBox16
             // 
@@ -1466,11 +1520,11 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.textBox1);
-            this.groupBox7.Controls.Add(this.radio_other_preg);
-            this.groupBox7.Controls.Add(this.radio_susp_anemia);
-            this.groupBox7.Controls.Add(this.radio_preg_ind_hyp);
-            this.groupBox7.Controls.Add(this.radio_antenatal_checkup);
+            this.groupBox7.Controls.Add(this.checkbox_wo_other);
+            this.groupBox7.Controls.Add(this.checkbox_wo_susp_anemia);
+            this.groupBox7.Controls.Add(this.checkbox_preg_ind_hyp);
+            this.groupBox7.Controls.Add(this.checkbox_antenatal_checkup);
+            this.groupBox7.Controls.Add(this.textbox_pregother);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.groupBox7.ForeColor = System.Drawing.SystemColors.MenuText;
             this.groupBox7.Location = new System.Drawing.Point(8, 762);
@@ -1480,56 +1534,52 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Diagnosis in Pregnant Women/Mothers";
             // 
-            // textBox1
+            // checkbox_wo_other
             // 
-            this.textBox1.Location = new System.Drawing.Point(199, 69);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.checkbox_wo_other.AutoSize = true;
+            this.checkbox_wo_other.Location = new System.Drawing.Point(111, 71);
+            this.checkbox_wo_other.Name = "checkbox_wo_other";
+            this.checkbox_wo_other.Size = new System.Drawing.Size(52, 17);
+            this.checkbox_wo_other.TabIndex = 28;
+            this.checkbox_wo_other.Text = "Other";
+            this.checkbox_wo_other.UseVisualStyleBackColor = true;
             // 
-            // radio_other_preg
+            // checkbox_wo_susp_anemia
             // 
-            this.radio_other_preg.AutoSize = true;
-            this.radio_other_preg.Location = new System.Drawing.Point(116, 69);
-            this.radio_other_preg.Name = "radio_other_preg";
-            this.radio_other_preg.Size = new System.Drawing.Size(51, 17);
-            this.radio_other_preg.TabIndex = 0;
-            this.radio_other_preg.TabStop = true;
-            this.radio_other_preg.Text = "Other";
-            this.radio_other_preg.UseVisualStyleBackColor = true;
+            this.checkbox_wo_susp_anemia.AutoSize = true;
+            this.checkbox_wo_susp_anemia.Location = new System.Drawing.Point(458, 37);
+            this.checkbox_wo_susp_anemia.Name = "checkbox_wo_susp_anemia";
+            this.checkbox_wo_susp_anemia.Size = new System.Drawing.Size(114, 17);
+            this.checkbox_wo_susp_anemia.TabIndex = 27;
+            this.checkbox_wo_susp_anemia.Text = "Suspected anemia";
+            this.checkbox_wo_susp_anemia.UseVisualStyleBackColor = true;
             // 
-            // radio_susp_anemia
+            // checkbox_preg_ind_hyp
             // 
-            this.radio_susp_anemia.AutoSize = true;
-            this.radio_susp_anemia.Location = new System.Drawing.Point(514, 35);
-            this.radio_susp_anemia.Name = "radio_susp_anemia";
-            this.radio_susp_anemia.Size = new System.Drawing.Size(113, 17);
-            this.radio_susp_anemia.TabIndex = 0;
-            this.radio_susp_anemia.TabStop = true;
-            this.radio_susp_anemia.Text = "Suspected anemia";
-            this.radio_susp_anemia.UseVisualStyleBackColor = true;
+            this.checkbox_preg_ind_hyp.AutoSize = true;
+            this.checkbox_preg_ind_hyp.Location = new System.Drawing.Point(264, 37);
+            this.checkbox_preg_ind_hyp.Name = "checkbox_preg_ind_hyp";
+            this.checkbox_preg_ind_hyp.Size = new System.Drawing.Size(181, 17);
+            this.checkbox_preg_ind_hyp.TabIndex = 26;
+            this.checkbox_preg_ind_hyp.Text = "Pregnancy-induced hypertension";
+            this.checkbox_preg_ind_hyp.UseVisualStyleBackColor = true;
             // 
-            // radio_preg_ind_hyp
+            // checkbox_antenatal_checkup
             // 
-            this.radio_preg_ind_hyp.AutoSize = true;
-            this.radio_preg_ind_hyp.Location = new System.Drawing.Point(315, 35);
-            this.radio_preg_ind_hyp.Name = "radio_preg_ind_hyp";
-            this.radio_preg_ind_hyp.Size = new System.Drawing.Size(180, 17);
-            this.radio_preg_ind_hyp.TabIndex = 0;
-            this.radio_preg_ind_hyp.TabStop = true;
-            this.radio_preg_ind_hyp.Text = "Pregnancy-induced hypertension";
-            this.radio_preg_ind_hyp.UseVisualStyleBackColor = true;
+            this.checkbox_antenatal_checkup.AutoSize = true;
+            this.checkbox_antenatal_checkup.Location = new System.Drawing.Point(111, 37);
+            this.checkbox_antenatal_checkup.Name = "checkbox_antenatal_checkup";
+            this.checkbox_antenatal_checkup.Size = new System.Drawing.Size(116, 17);
+            this.checkbox_antenatal_checkup.TabIndex = 25;
+            this.checkbox_antenatal_checkup.Text = "Antenatal checkup";
+            this.checkbox_antenatal_checkup.UseVisualStyleBackColor = true;
             // 
-            // radio_antenatal_checkup
+            // textbox_pregother
             // 
-            this.radio_antenatal_checkup.AutoSize = true;
-            this.radio_antenatal_checkup.Location = new System.Drawing.Point(116, 35);
-            this.radio_antenatal_checkup.Name = "radio_antenatal_checkup";
-            this.radio_antenatal_checkup.Size = new System.Drawing.Size(115, 17);
-            this.radio_antenatal_checkup.TabIndex = 0;
-            this.radio_antenatal_checkup.TabStop = true;
-            this.radio_antenatal_checkup.Text = "Antenatal checkup";
-            this.radio_antenatal_checkup.UseVisualStyleBackColor = true;
+            this.textbox_pregother.Location = new System.Drawing.Point(199, 69);
+            this.textbox_pregother.Name = "textbox_pregother";
+            this.textbox_pregother.Size = new System.Drawing.Size(100, 20);
+            this.textbox_pregother.TabIndex = 29;
             // 
             // groupBox6
             // 
@@ -1569,7 +1619,7 @@
             this.radio_hydration2.Location = new System.Drawing.Point(90, 11);
             this.radio_hydration2.Name = "radio_hydration2";
             this.radio_hydration2.Size = new System.Drawing.Size(39, 17);
-            this.radio_hydration2.TabIndex = 0;
+            this.radio_hydration2.TabIndex = 23;
             this.radio_hydration2.TabStop = true;
             this.radio_hydration2.Text = "No";
             this.radio_hydration2.UseVisualStyleBackColor = true;
@@ -1580,7 +1630,7 @@
             this.radio_hydration1.Location = new System.Drawing.Point(6, 11);
             this.radio_hydration1.Name = "radio_hydration1";
             this.radio_hydration1.Size = new System.Drawing.Size(43, 17);
-            this.radio_hydration1.TabIndex = 0;
+            this.radio_hydration1.TabIndex = 22;
             this.radio_hydration1.TabStop = true;
             this.radio_hydration1.Text = "Yes";
             this.radio_hydration1.UseVisualStyleBackColor = true;
@@ -1601,7 +1651,7 @@
             this.radio_pallor2.Location = new System.Drawing.Point(91, 14);
             this.radio_pallor2.Name = "radio_pallor2";
             this.radio_pallor2.Size = new System.Drawing.Size(39, 17);
-            this.radio_pallor2.TabIndex = 0;
+            this.radio_pallor2.TabIndex = 20;
             this.radio_pallor2.TabStop = true;
             this.radio_pallor2.Text = "No";
             this.radio_pallor2.UseVisualStyleBackColor = true;
@@ -1612,7 +1662,7 @@
             this.radio_pallor1.Location = new System.Drawing.Point(7, 14);
             this.radio_pallor1.Name = "radio_pallor1";
             this.radio_pallor1.Size = new System.Drawing.Size(43, 17);
-            this.radio_pallor1.TabIndex = 0;
+            this.radio_pallor1.TabIndex = 19;
             this.radio_pallor1.TabStop = true;
             this.radio_pallor1.Text = "Yes";
             this.radio_pallor1.UseVisualStyleBackColor = true;
@@ -1677,21 +1727,21 @@
             this.masked_muac.Location = new System.Drawing.Point(121, 105);
             this.masked_muac.Name = "masked_muac";
             this.masked_muac.Size = new System.Drawing.Size(100, 20);
-            this.masked_muac.TabIndex = 1;
+            this.masked_muac.TabIndex = 24;
             // 
             // masked_height_length
             // 
             this.masked_height_length.Location = new System.Drawing.Point(121, 77);
             this.masked_height_length.Name = "masked_height_length";
             this.masked_height_length.Size = new System.Drawing.Size(100, 20);
-            this.masked_height_length.TabIndex = 1;
+            this.masked_height_length.TabIndex = 21;
             // 
             // masked_weight
             // 
             this.masked_weight.Location = new System.Drawing.Point(82, 20);
             this.masked_weight.Name = "masked_weight";
             this.masked_weight.Size = new System.Drawing.Size(100, 20);
-            this.masked_weight.TabIndex = 1;
+            this.masked_weight.TabIndex = 18;
             // 
             // panel1
             // 
@@ -1702,68 +1752,14 @@
             this.panel1.Size = new System.Drawing.Size(830, 720);
             this.panel1.TabIndex = 11;
             // 
-            // radiobtn_rou_immu01
-            // 
-            this.radiobtn_rou_immu01.AutoSize = true;
-            this.radiobtn_rou_immu01.Location = new System.Drawing.Point(7, 19);
-            this.radiobtn_rou_immu01.Name = "radiobtn_rou_immu01";
-            this.radiobtn_rou_immu01.Size = new System.Drawing.Size(43, 17);
-            this.radiobtn_rou_immu01.TabIndex = 0;
-            this.radiobtn_rou_immu01.TabStop = true;
-            this.radiobtn_rou_immu01.Text = "Yes";
-            this.radiobtn_rou_immu01.UseVisualStyleBackColor = true;
-            // 
-            // radiobtn_rou_immu02
-            // 
-            this.radiobtn_rou_immu02.AutoSize = true;
-            this.radiobtn_rou_immu02.Location = new System.Drawing.Point(98, 19);
-            this.radiobtn_rou_immu02.Name = "radiobtn_rou_immu02";
-            this.radiobtn_rou_immu02.Size = new System.Drawing.Size(39, 17);
-            this.radiobtn_rou_immu02.TabIndex = 0;
-            this.radiobtn_rou_immu02.TabStop = true;
-            this.radiobtn_rou_immu02.Text = "No";
-            this.radiobtn_rou_immu02.UseVisualStyleBackColor = true;
-            // 
-            // groupBox14
-            // 
-            this.groupBox14.Controls.Add(this.radiobtn_rou_immu02);
-            this.groupBox14.Controls.Add(this.radiobtn_rou_immu01);
-            this.groupBox14.Location = new System.Drawing.Point(471, 32);
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(200, 50);
-            this.groupBox14.TabIndex = 1;
-            this.groupBox14.TabStop = false;
-            // 
-            // radiobtn_lt_opv01
-            // 
-            this.radiobtn_lt_opv01.AutoSize = true;
-            this.radiobtn_lt_opv01.Location = new System.Drawing.Point(7, 18);
-            this.radiobtn_lt_opv01.Name = "radiobtn_lt_opv01";
-            this.radiobtn_lt_opv01.Size = new System.Drawing.Size(43, 17);
-            this.radiobtn_lt_opv01.TabIndex = 0;
-            this.radiobtn_lt_opv01.TabStop = true;
-            this.radiobtn_lt_opv01.Text = "Yes";
-            this.radiobtn_lt_opv01.UseVisualStyleBackColor = true;
-            // 
-            // radiobtn_lt_opv02
-            // 
-            this.radiobtn_lt_opv02.AutoSize = true;
-            this.radiobtn_lt_opv02.Location = new System.Drawing.Point(99, 20);
-            this.radiobtn_lt_opv02.Name = "radiobtn_lt_opv02";
-            this.radiobtn_lt_opv02.Size = new System.Drawing.Size(39, 17);
-            this.radiobtn_lt_opv02.TabIndex = 1;
-            this.radiobtn_lt_opv02.TabStop = true;
-            this.radiobtn_lt_opv02.Text = "No";
-            this.radiobtn_lt_opv02.UseVisualStyleBackColor = true;
-            // 
-            // Form1
+            // Form_MHS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(876, 731);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
+            this.Name = "Form_MHS";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -1784,6 +1780,8 @@
             this.groupBox9.PerformLayout();
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
             this.groupBox16.ResumeLayout(false);
             this.groupBox16.PerformLayout();
             this.groupBox15.ResumeLayout(false);
@@ -1805,8 +1803,6 @@
             this.groupBox20.ResumeLayout(false);
             this.groupBox20.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.groupBox14.ResumeLayout(false);
-            this.groupBox14.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1854,10 +1850,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.RadioButton radio_other_preg;
-        private System.Windows.Forms.RadioButton radio_susp_anemia;
-        private System.Windows.Forms.RadioButton radio_preg_ind_hyp;
-        private System.Windows.Forms.RadioButton radio_antenatal_checkup;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.TextBox textbox_diagnosis_other;
         private System.Windows.Forms.CheckBox checkbox_diagnosis_other;
@@ -1956,12 +1948,16 @@
         private System.Windows.Forms.RadioButton radio_hydration1;
         private System.Windows.Forms.RadioButton radio_pallor2;
         private System.Windows.Forms.RadioButton radio_pallor1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textbox_pregother;
         private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.RadioButton radiobtn_rou_immu02;
         private System.Windows.Forms.RadioButton radiobtn_rou_immu01;
         private System.Windows.Forms.RadioButton radiobtn_lt_opv01;
         private System.Windows.Forms.RadioButton radiobtn_lt_opv02;
+        private System.Windows.Forms.CheckBox checkbox_wo_other;
+        private System.Windows.Forms.CheckBox checkbox_wo_susp_anemia;
+        private System.Windows.Forms.CheckBox checkbox_preg_ind_hyp;
+        private System.Windows.Forms.CheckBox checkbox_antenatal_checkup;
     }
 }
 
